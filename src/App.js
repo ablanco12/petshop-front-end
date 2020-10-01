@@ -693,9 +693,9 @@ class App extends Component {
     console.log("pets", this.state.pets);
     return (
       <Fragment>
-        <div class="ui huge header center aligned blue">
-          K9 Grooming
-          <div class="sub header">Manage your account.</div>
+        <div class="main-nav ui huge header center aligned blue">
+          <h1 class="nav-title">K9 Grooming</h1>
+          <p class="nav-subtitle">Manage your account</p>
         </div>
         <div>
           <CustomNav

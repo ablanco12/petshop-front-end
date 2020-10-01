@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Grid, Menu, Segment } from "semantic-ui-react";
-
 import CheckedIn from "./CheckedIn";
 import CheckInForm from "./CheckInForm";
 
