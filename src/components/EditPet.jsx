@@ -53,7 +53,7 @@ class EditPost extends Component {
             />
           </Form.Group>
           <Form.Group widths={2}>
-            <div class="field">
+            <div className="field">
               <label>Special Concerns</label>
               <textarea
                 rows="2"
@@ -72,7 +72,7 @@ class EditPost extends Component {
               value={petInfo.rabies}
             />
           </Form.Group>
-          <button class="ui button">Update</button>
+          <button className="ui button">Update</button>
         </Form>
         <Link to="/client">
           <button className="back-button ui button">Back</button>

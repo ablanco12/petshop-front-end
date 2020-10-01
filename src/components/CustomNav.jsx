@@ -59,6 +59,7 @@ class CustomNav extends Component {
             <Menu.Item>
               {activeItem === "Clients" && (
                 <Input
+                  className="search-bar"
                   icon="search"
                   placeholder="Search..."
                   name="search"
@@ -68,6 +69,7 @@ class CustomNav extends Component {
               )}
               {activeItem === "History" && (
                 <Input
+                  className="search-bar"
                   icon="search"
                   placeholder="Search..."
                   name="search"
@@ -89,16 +91,16 @@ class CustomNav extends Component {
                     />
                   </Dropdown.Item>
                 ) : (
-                  <Dropdown.Item>
-                    <Menu.Item
-                      as={Link}
-                      to="/"
-                      name="logout"
-                      active={activeItem === "Home"}
-                      onClick={this.props.handleClickLogout}
-                    />
-                  </Dropdown.Item>
-                )}
+                    <Dropdown.Item>
+                      <Menu.Item
+                        as={Link}
+                        to="/"
+                        name="logout"
+                        active={activeItem === "Home"}
+                        onClick={this.props.handleClickLogout}
+                      />
+                    </Dropdown.Item>
+                  )}
                 <Dropdown.Item>
                   <Menu.Item
                     as={Link}

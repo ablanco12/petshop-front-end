@@ -29,36 +29,46 @@ class CheckInForm extends Component {
       }));
 
     const CheckboxExampleCheckbox = () => (
-      <Checkbox label="Make my profile visible" />
+      <Checkbox className="profile-checkbox" label="Make my profile visible" />
     );
 
     return (
-      <div className="ui segment">
-        <Form onSubmit={checkIn}>
-          <Form.Group>
-            <Dropdown
-              placeholder="Pet"
-              options={petOption}
-              search
-              selection
-              fluid
-              allowAdditions
-              onChange={selectPetOnClick}
-            />
-            <Dropdown
-              placeholder="Service"
-              options={serviceOption}
-              search
-              selection
-              fluid
-              allowAdditions
-              onChange={servicesOnClick}
-            />
-            {CheckboxExampleCheckbox()}
-          </Form.Group>
-          <button className="ui secondary button">Check In</button>
+      <div className=" ">
+        <Form className="container" onSubmit={checkIn}>
+          <Form className="row m-0">
+            <div className="col-6">
+              <Dropdown className=""
+                placeholder="Pet"
+                options={petOption}
+                search
+                selection
+                fluid
+                allowAdditions
+                onChange={selectPetOnClick}
+              />
+            </div>
+            <div className="col-6">
+              <Dropdown className=""
+                placeholder="Service"
+                options={serviceOption}
+                search
+                selection
+                fluid
+                allowAdditions
+                onChange={servicesOnClick}
+              />
+            </div>
+
+            <div className="col-12 py-3">
+              {CheckboxExampleCheckbox()}
+            </div>
+          </Form>
+          <div className="col-12">
+            <button className="ui secondary button next-btn">Check In</button>
+            <button className="ui button cancel">Cancel</button>
+          </div>
         </Form>
-        <button className="ui button">Cancel</button>
+
       </div>
     );
   }
