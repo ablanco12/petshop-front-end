@@ -1,15 +1,31 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import defaultImg from '../assets/img/flat-dog-default.jpg'
+import defaultImg from '../assets/img/flat-dog-default-2.png';
+import $ from 'jquery'
 // import AddPet from "./AddPet";
 
 class Client extends Component {
+
+  // componentDidMount() {
+  //   $('.collapsible').collapsible();
+  // }
+
   render() {
+
     return (
       <div className="row mt-2">
         {this.props.filteredClients.length ? (
           this.props.filteredClients.map((client) => (
+
+
+
             <div className="col-sm-6 mt-2">
+              {/* <ul className="collapsible">
+                <li>
+                  <div className="collapsible-header"><i className="material-icons">filter_drama</i>First</div>
+                  <div className="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+              </ul> */}
 
               <div className="card">
                 <div className="card-image waves-effect waves-block waves-light">
@@ -40,14 +56,14 @@ class Client extends Component {
                     onClick={() => this.props.clientPetOnClick(client)}
                   >
                     Pets list
-                    <i className="material-icons left">list</i>
+                    <i className="card-icon material-icons left">list</i>
                   </a>
                   <a
                     className="list-option w-100 text-left"
                     onClick={() => this.props.clientOnClickEdit(client)}
                   >
                     Edit
-                    <i className="material-icons left">edit</i>
+                    <i className="card-icon material-icons left">edit</i>
                   </a>
                   <a
                     className="list-option w-100 text-left"
@@ -55,14 +71,14 @@ class Client extends Component {
                     onClick={() => this.props.addingPetToAClient(client)}
                   >
                     Add a Pet
-                    <i className="material-icons left">add_circle_outline</i>
+                    <i className="card-icon material-icons left">add_circle_outline</i>
                   </a>
                   <a
                     className="list-option-delete w-100 text-left"
                     onClick={() => this.props.deleteClientHandleClick(client)}
                   >
                     Delete Client
-                    <i className="material-icons left">remove_circle_outline</i>
+                    <i className="card-icon material-icons left">remove_circle_outline</i>
                   </a>
                 </div>
               </div>

@@ -105,7 +105,7 @@
 .list-option:hover {
     padding-left: 24px;
     transition: 300ms;
-    color: #fff !important;
+    color: #21f3e7 !important;
     background: #2196F3;
     border-bottom: .8px solid #2196F3;
 }
@@ -132,11 +132,15 @@
     transition: 300ms;
 }
 
-
 .list-option-delete:hover {
     padding-left: 24px;
     transition: 300ms;
     color: #fff !important;
     background: #f53b57;
     /* border-bottom: .8px solid #f53b57; */
+}
+
+.card-icon {
+    bottom: 3px;
+    position: relative;
 }
