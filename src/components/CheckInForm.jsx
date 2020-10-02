@@ -28,9 +28,9 @@ class CheckInForm extends Component {
         value: pet.id,
       }));
 
-    const CheckboxExampleCheckbox = () => (
-      <Checkbox label="Make my profile visible" />
-    );
+    // const CheckboxExampleCheckbox = () => (
+    //   <Checkbox label="Make my profile visible" />
+    // );
 
     return (
       <div className="ui segment">
@@ -54,7 +54,7 @@ class CheckInForm extends Component {
               allowAdditions
               onChange={servicesOnClick}
             />
-            {CheckboxExampleCheckbox()}
+            {/* {CheckboxExampleCheckbox()} */}
           </Form.Group>
           <button className="ui secondary button">Check In</button>
         </Form>
