@@ -34,7 +34,7 @@ class Client extends Component {
                   </div>
                   <div className="collapsible-body">
                     <div className="row">
-                      <div className="col-md-9">
+                      <div className="col-md-8">
                         <div className="row">
                           <div className="col-md-6 mt-3">
                             <p className="card-text mb-3">
@@ -73,7 +73,7 @@ class Client extends Component {
 
 
                       </div>
-                      <div className="col-md-3 options-right">
+                      <div className="col-md-4 options-right">
                         <a
                           className="list-option w-100 text-left"
                           onClick={() => this.props.clientPetOnClick(client)}
