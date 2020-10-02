@@ -22,7 +22,7 @@ class CustomNav extends Component {
                 <Menu.Item
                   as={Link}
                   to="/client"
-                  name="Clients"
+                  name="All Clients"
                   active={activeItem === "Clients"}
                   onClick={this.props.handleItemClick}
                 />
@@ -31,7 +31,7 @@ class CustomNav extends Component {
                 <Menu.Item
                   as={Link}
                   to="/form"
-                  name="New Client"
+                  name="Add Client"
                   active={activeItem === "New Client"}
                   onClick={this.props.handleItemClick}
                 />
@@ -40,7 +40,7 @@ class CustomNav extends Component {
                 <Menu.Item
                   as={Link}
                   to="/services/new"
-                  name="New Services"
+                  name="Add Services"
                   active={activeItem === "New Services"}
                   onClick={this.props.handleItemClick}
                 />
