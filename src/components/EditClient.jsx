@@ -52,7 +52,7 @@ class EditClient extends Component {
                 onChange={formHandleChange}
               />
             </Form.Group>
-            <button class="ui button">Submit</button>
+            <button className="ui button">Submit</button>
             <Link to="/client">
               <button className="back-button ui button">Back</button>
             </Link>

@@ -51,7 +51,7 @@ class AddPet extends Component {
             />
           </Form.Group>
           <Form.Group widths={2}>
-            <div class="field">
+            <div className="field">
               <label>Special Concerns</label>
               <textarea
                 rows="2"
@@ -70,7 +70,7 @@ class AddPet extends Component {
               value={petInfo.rabies}
             />
           </Form.Group>
-          <button class="ui button">Submit</button>
+          <button className="ui button">Submit</button>
           <Link to="/client">
             <button className="back-button ui button">Back</button>
           </Link>
@@ -187,7 +187,7 @@ export default AddPet;
 //   </option>
 // ))}
 
-// <select class="ui dropdown">
+// <select className="ui dropdown">
 
 /* <option value="">Breed</option>
 {breeds.map((breed) => (

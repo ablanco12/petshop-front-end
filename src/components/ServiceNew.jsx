@@ -8,8 +8,9 @@ class ServiceNew extends Component {
     return (
       <div>
         <Form onSubmit={this.props.addingNewService}>
-          <Form.Group widths="equal">
+          <Form.Group className="row px-5 py-4" widths="equal">
             <Form.Input
+              className="col-12 px-0"
               fluid
               label="Service Name"
               placeholder="Service Name"
@@ -18,10 +19,12 @@ class ServiceNew extends Component {
               value={this.props.ServiceNew}
               onChange={this.props.handleChangeServiceNew}
             />
-            <button class="ui button">Submit</button>
-            <Link to="/client">
-              <button className="back-button ui button">Back</button>
-            </Link>
+            <div className="col-12 py-4 px-0">
+              <button className="ui button next-btn">Submit</button>
+              <Link to="/client">
+                <button className="back-button ui button">Back</button>
+              </Link>
+            </div>
           </Form.Group>
         </Form>
         {services.length > 0 &&

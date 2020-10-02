@@ -52,9 +52,9 @@ class FormApplication extends Component {
                 onChange={formHandleChange}
               />
             </Form.Group>
-            <button class="ui button">Submit</button>
+            <button className="ui button next-btn">Submit</button>
             <Link to="/client">
-              <button className="back-button ui button">Back</button>
+              <button className="back-button ui button cancel-btn">Back</button>
             </Link>
           </Form>
         </div>
