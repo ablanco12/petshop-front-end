@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import './App.css';
+import '../node_modules/materialize-css/dist/css/materialize.css'
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";

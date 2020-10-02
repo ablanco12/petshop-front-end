@@ -71,10 +71,13 @@
 }
 
 .phone-title {
-    font-size: 22px;
+    font-size: 14px;
     color: #485460;
-    font-weight: 200;
+    font-weight: 700;
     margin-right: 8px;
+    padding-bottom: 17px;
+    text-decoration: underline;
+    line-height: 22px;
 }
 
 .phone-number {
@@ -112,7 +115,7 @@
 
 .list-option-delete {
     display: inline-block;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
     font-weight: 400;
@@ -140,7 +143,26 @@
     /* border-bottom: .8px solid #f53b57; */
 }
 
+.options-right {
+    border-left: 1.2px solid rgba(72, 84, 96, 0.4);
+}
+
+.options-icon {
+    position: absolute;
+    right: 18px;
+}
+
 .card-icon {
     bottom: 3px;
     position: relative;
+}
+
+.info-icon {
+    position: relative;
+    top: 5px;
+    margin-right: 8px;
+}
+
+.collapsible-body {
+    background: rgba(33, 133, 208, 0.068) !important;
 }
