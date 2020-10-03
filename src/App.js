@@ -16,6 +16,8 @@ import _ from "lodash";
 
 import { Switch, Route, withRouter } from "react-router-dom";
 
+import $ from "jquery"
+
 class App extends Component {
   state = {
     accounts: {
@@ -693,9 +695,9 @@ class App extends Component {
     console.log("pets", this.state.pets);
     return (
       <Fragment>
-        <div class="ui huge header center aligned blue">
-          K9 Grooming
-          <div class="sub header">Manage your account.</div>
+        <div className="main-nav ui huge header center aligned blue">
+          <h1 className="nav-title">K9 Grooming</h1>
+          <p className="nav-subtitle">Manage your account</p>
         </div>
         <div>
           <CustomNav
@@ -706,7 +708,7 @@ class App extends Component {
             handleClickLogout={this.handleClickLogout}
           />
         </div>
-        <div class="ui segment">
+        <div className="container py-4">
           <Switch>
             <Route
               exact
@@ -877,9 +879,9 @@ class App extends Component {
 export default withRouter(App);
 {
   /* <div>
-        <div class="ui huge header center aligned blue">K9 Grooming</div>
-        <div class="ui grid">
-          <div class="four column">
+        <div className="ui huge header center aligned blue">K9 Grooming</div>
+        <div className="ui grid">
+          <div className="four column">
             <CustomNav />
             <Switch>
               <Route exact path="/" render={() => <Home />} />
