@@ -59,11 +59,11 @@ class CheckInForm extends Component {
               />
             </div>
 
-            <div className="col-12 py-3">
+            {/* <div className="col-12 py-3">
               {CheckboxExampleCheckbox()}
-            </div>
+            </div> */}
           </Form>
-          <div className="col-12">
+          <div className="col-12 mt-3">
             <button className="ui secondary button next-btn">Check In</button>
             <button className="ui button cancel">Cancel</button>
           </div>
