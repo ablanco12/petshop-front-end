@@ -66,11 +66,6 @@ class Client extends Component {
                             </p>
                           </div>
                         </div>
-
-
-
-
-
                       </div>
                       <div className="col-md-4 options-right">
                         <a
