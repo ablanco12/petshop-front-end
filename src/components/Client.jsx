@@ -15,7 +15,29 @@ class Client extends Component {
       var elems = document.querySelectorAll('.collapsible');
       var instances = M.Collapsible.init(elems, {});
     });
+
+    console.log('Component will mount!')
   }
+
+  
+ componentDidMount() {
+    console.log('Component DID MOUNT!')
+ }
+ componentWillReceiveProps(newProps) {    
+    console.log('Component WILL RECIEVE PROPS!')
+ }
+ shouldComponentUpdate(newProps, newState) {
+    return true;
+ }
+ componentWillUpdate(nextProps, nextState) {
+    console.log('Component WILL UPDATE!');
+ }
+ componentDidUpdate(prevProps, prevState) {
+    console.log('Component DID UPDATE!')
+ }
+ componentWillUnmount() {
+    console.log('Component WILL UNMOUNT!')
+ }
 
   render() {
 
