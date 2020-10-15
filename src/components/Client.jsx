@@ -6,23 +6,13 @@ import M from "../../node_modules/materialize-css/dist/js/materialize.min.js";
 
 class Client extends Component {
 
-  componentWillMount() {
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.dropdown-trigger');
-      var instances = M.Dropdown.init(elems, {});
-    });
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.collapsible');
-      var instances = M.Collapsible.init(elems, {});
-    });
-
-    console.log('Component will mount!')
+  componentDidMount() {
+    M.AutoInit();
+        window.addEventListener('load', this.handleLoad);
+    console.log('Component did mount!')
   }
 
-  
- componentDidMount() {
-    console.log('Component DID MOUNT!')
- }
+
  componentWillReceiveProps(newProps) {    
     console.log('Component WILL RECIEVE PROPS!')
  }

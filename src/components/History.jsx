@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import { Card, Button } from "semantic-ui-react";
+import M from "../../node_modules/materialize-css/dist/js/materialize.min.js";
+
+
 
 class History extends Component {
+  componentDidMount() {
+    M.AutoInit();
+        window.addEventListener('load', this.handleLoad);
+    console.log('Component will mount!')
+  }
   render() {
     const { pets, services } = this.props;
     return (
