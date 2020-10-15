@@ -22,7 +22,7 @@ class AddPet extends Component {
     return (
       <div>
         <Form onSubmit={submitingPet}>
-          <h1>Customer Info</h1>
+          <h1>Pet Information</h1>
           <Form.Group unstackable widths={2}>
             <Form.Input
               label="Pets Name"

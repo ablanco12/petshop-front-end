@@ -10,7 +10,7 @@ class FormApplication extends Component {
       <div>
         <div className="clientform">
           <Form onSubmit={addingClient}>
-            <h1>Customer Info</h1>
+            <h1>Client Information</h1>
             <Form.Group unstackable widths={2}>
               <Form.Input
                 label="First name"

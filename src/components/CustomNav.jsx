@@ -22,8 +22,8 @@ class CustomNav extends Component {
                 <Menu.Item
                   as={Link}
                   to="/client"
-                  name="Clients"
-                  active={activeItem === "Clients"}
+                  name="All Clients"
+                  active={activeItem === "All Clients"}
                   onClick={this.props.handleItemClick}
                 />
               </Dropdown.Item>
@@ -31,12 +31,12 @@ class CustomNav extends Component {
                 <Menu.Item
                   as={Link}
                   to="/form"
-                  name="New Client"
-                  active={activeItem === "New Client"}
+                  name="Add Client"
+                  active={activeItem === "Add Client"}
                   onClick={this.props.handleItemClick}
                 />
               </Dropdown.Item>
-              <Dropdown.Item>
+              {/* <Dropdown.Item>
                 <Menu.Item
                   as={Link}
                   to="/services/new"
@@ -44,7 +44,7 @@ class CustomNav extends Component {
                   active={activeItem === "New Services"}
                   onClick={this.props.handleItemClick}
                 />
-              </Dropdown.Item>
+              </Dropdown.Item> */}
             </Dropdown.Menu>
           </Dropdown>
 
