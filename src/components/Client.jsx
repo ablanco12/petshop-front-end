@@ -7,37 +7,17 @@ import M from "../../node_modules/materialize-css/dist/js/materialize.min.js";
 class Client extends Component {
 
   componentWillMount() {
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.dropdown-trigger');
-      var instances = M.Dropdown.init(elems, {});
-    });
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.collapsible');
-      var instances = M.Collapsible.init(elems, {});
-    });
-
-    console.log('Component will mount!')
+    this.dropdown();
+    
   }
 
+  dropdown(event) {
+    console.log('Hits')
+    console.log('event', event);
+    var elems = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(elems,{})
+  }
   
- componentDidMount() {
-    console.log('Component DID MOUNT!')
- }
- componentWillReceiveProps(newProps) {    
-    console.log('Component WILL RECIEVE PROPS!')
- }
- shouldComponentUpdate(newProps, newState) {
-    return true;
- }
- componentWillUpdate(nextProps, nextState) {
-    console.log('Component WILL UPDATE!');
- }
- componentDidUpdate(prevProps, prevState) {
-    console.log('Component DID UPDATE!')
- }
- componentWillUnmount() {
-    console.log('Component WILL UNMOUNT!')
- }
 
   render() {
 
@@ -48,8 +28,8 @@ class Client extends Component {
             {this.props.filteredClients.length ? (
               this.props.filteredClients.map((client) => (
                 <li>
-                  <div className="collapsible-header">
-                    <i className="material-icons non-vip-icon">star_border</i>
+                  <div className="collapsible-header" key={client.id} onClick={(event) => this.dropdown(event)}>
+                    <i className="material-icons non-vip-icon"   >star_border </i>
                     ({client.id}) - {client.lastname}, {client.firstname}
                     <i className="material-icons options-icon">more_vert</i>
                   </div>
