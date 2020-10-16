@@ -25,7 +25,7 @@ class AddPet extends Component {
           <h1>Pet Information</h1>
           <Form.Group unstackable widths={2}>
             <Form.Input
-              label="Pets Name"
+              
               placeholder="Name"
               id="name"
               name="name"
@@ -33,7 +33,7 @@ class AddPet extends Component {
               onChange={petInfoInputChange}
             />
             <Form.Input
-              label="Color"
+              
               placeholder="Color"
               onChange={petInfoInputChange}
               id="color"
@@ -54,6 +54,7 @@ class AddPet extends Component {
             <div className="field">
               <label>Special Concerns</label>
               <textarea
+                
                 rows="2"
                 name="specialconcerns"
                 onChange={petInfoInputChange}

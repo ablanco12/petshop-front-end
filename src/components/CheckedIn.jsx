@@ -38,15 +38,16 @@ class CheckedIn extends Component {
             <Card>
               <Card.Content>
                 <Card.Header>Name: {d.petName}</Card.Header>
-                <Card.Meta>pet</Card.Meta>
-                <Card.Description>Service: {d.service}</Card.Description>
-                <Card.Description>Service: {d.date}</Card.Description>
+                <Card.Meta></Card.Meta>
+                <Card.Description><b>Service:</b> {d.service}</Card.Description>
+                <Card.Description><b>Date:</b> {d.date}</Card.Description>
+                <br />
                 <Button
                   basic
                   color="pink"
                   onClick={() => this.props.finishOnClick(d)}
                 >
-                  Finish
+                  Done
                 </Button>
               </Card.Content>
             </Card>
@@ -54,7 +55,7 @@ class CheckedIn extends Component {
         ) : (
           <Card>
             <Card.Content>
-              <Card.Header>No one is checked in</Card.Header>
+              <Card.Header>No animals are checked in</Card.Header>
             </Card.Content>
           </Card>
         )}
